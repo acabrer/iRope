@@ -5,7 +5,9 @@
 // To view this data, use the Arduino Serial Monitor to watch the
 // scrolling angles, or run the OrientationVisualiser example in Processing.
 // Based on  https://github.com/PaulStoffregen/NXPMotionSense with adjustments
-// to Adafruit Unified Sensor interface
+// to Adafruit Unified Sensor interface.
+
+// Sends all data via OSC for communicating with other devices.
 
 #include <Adafruit_Sensor_Calibration.h>
 #include <Adafruit_AHRS.h>
