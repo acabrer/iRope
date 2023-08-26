@@ -17,16 +17,11 @@
 #include <WiFiUdp.h>
 #include <OSCMessage.h>
 
-char ssid[] = "Ale";          // your network SSID (name)
-char pass[] = "alexela5";                    // your network password
-//
-//char ssid[] = "TP-Link_1E86";          // your network SSID (name)
-//char pass[] = "98204564";                    // your network password
-//
+char ssid[] = "";          // your network SSID (name)
+char pass[] = "";          // your network password
 
 
 WiFiUDP Udp;                                // A UDP instance to let us send and receive packets over UDP
-//const IPAddress outIp(192, 168, 1, 45);     // remote IP of your computer
 const IPAddress outIp(192, 168, 43, 154);     // remote IP of your computer
 const unsigned int outPort = 8001;          // remote port to receive OSC
 const unsigned int localPort = 9001;        // local port to listen for OSC packets (actually not used for sending)
